@@ -600,15 +600,15 @@ footer ul li {
 }
 
 footer p {
-  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 1.11vw;
   line-height: 2.64vw;
-  text-align: right;
   color: var(--faded-white);
-  margin: auto;
 }
 
 /* Start here is the background gradient setting */
