@@ -182,6 +182,10 @@ section {
   opacity: 1;
   transform: translateY(1.953vw);
 }
+.bottom-bar nav #dragableContent {
+  display: none;
+}
+
 .indicator {
   position: absolute;
   top: -50%;

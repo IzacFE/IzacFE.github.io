@@ -510,17 +510,32 @@
                 Have message or feedback for me?? send me message by filling the
                 form bellow :
               </p>
-              <form action="" class="contact-form">
+              <form action="" class="contact-form" name="submit-contact-form">
                 <div class="input-control i-c-2">
-                  <input type="text" required placeholder="YOUR NAME" />
-                  <input type="email" required placeholder="YOUR EMAIL" />
+                  <input
+                    type="text"
+                    required
+                    placeholder="YOUR NAME"
+                    name="name"
+                  />
+                  <input
+                    type="email"
+                    required
+                    placeholder="YOUR EMAIL"
+                    name="email"
+                  />
                 </div>
                 <div class="input-control">
-                  <input type="text" required placeholder="ENTER SUBJECT" />
+                  <input
+                    type="text"
+                    required
+                    placeholder="ENTER SUBJECT"
+                    name="subject"
+                  />
                 </div>
                 <div class="input-control">
                   <textarea
-                    name=""
+                    name="message"
                     id=""
                     cols="15"
                     rows="8"
@@ -535,6 +550,7 @@
                     ></span>
                   </a>
                 </div>
+                <button type="submit">submit</button>
               </form>
             </div>
           </div>
@@ -588,10 +604,6 @@
       <i class="fa-regular fa-sun sun"></i>
     </div>
     <script src="configs/index.js"></script>
-    <script>
-      let value = 10;
-      let wide = 512;
-      console.log((value / wide) * 100);
-    </script>
+    <script src="configs/contactForm.js"></script>
   </body>
 </html>
