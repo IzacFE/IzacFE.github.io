@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => {
       console.error("Error!", error.message);
-      toastMessage("failed");
       submitButton.disabled = false;
+      toastMessage("failed");
     });
 });
