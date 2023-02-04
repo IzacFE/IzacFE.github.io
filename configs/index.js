@@ -68,3 +68,23 @@
     }
   }
 })();
+
+// Toast Message JS
+function toastMessage(response) {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  if (response === "success") {
+    x.innerText = "Thank you, your message successfully sended";
+    x.className = "show";
+  } else if (response === "failed") {
+    x.innerText = "Sorry, Something is wrong at the moment";
+    x.className = "show alert";
+  }
+  // Add the "show" class to DIV
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function () {
+    x.className = x.className = "";
+  }, 2900);
+}

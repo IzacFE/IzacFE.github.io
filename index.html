@@ -512,7 +512,7 @@
                 Have message or feedback for me?? send me message by filling the
                 form bellow :
               </p>
-              <form action="" class="contact-form" name="submit-contact-form">
+              <form class="contact-form" name="submit-contact-form">
                 <div class="input-control i-c-2">
                   <input
                     type="text"
@@ -544,15 +544,12 @@
                     placeholder="Message Here..."
                   ></textarea>
                 </div>
-                <div class="submit-btn">
-                  <a href="#" class="main-btn">
-                    <span class="btn-text">Submit</span>
-                    <span class="btn-icon"
-                      ><i class="fa-solid fa-paper-plane"></i
-                    ></span>
-                  </a>
-                </div>
-                <button type="submit">submit</button>
+                <button id="form-submit-btn" type="submit">
+                  Submit
+                  <span class="btn-icon"
+                    ><i class="fa-solid fa-paper-plane"></i
+                  ></span>
+                </button>
               </form>
             </div>
           </div>
@@ -601,10 +598,16 @@
       </nav>
     </div>
 
+    <!-- Dark Light Mode -->
     <div class="theme-btn">
       <i class="fa-solid fa-moon moon"></i>
       <i class="fa-regular fa-sun sun"></i>
     </div>
+
+    <!-- Toast Message -->
+    <!-- The actual snackbar -->
+    <div id="snackbar"></div>
+
     <script src="configs/index.js"></script>
     <script src="configs/contactForm.js"></script>
   </body>
