@@ -11,6 +11,7 @@
     height: 50px;
   }
   .header-content {
+    min-height: auto;
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
@@ -52,16 +53,17 @@
 
   .timeline {
     grid-template-columns: repeat(1, 1fr);
+    padding-left: 1rem;
     padding-bottom: 6rem;
   }
 
   .container {
-    padding: 2rem 2.5rem !important;
+    padding: 2rem 1.5rem !important;
   }
 
   .about-stats {
     .progress-bars {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -72,8 +74,10 @@
   }
 
   .blogs {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
+    body {
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 6rem;
+    }
   }
 
   .contact-content-con {
@@ -158,8 +162,10 @@
 
 @media screen and (max-width: 1250px) {
   .blogs {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 6rem;
+    body {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 6rem;
+    }
   }
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
@@ -170,7 +176,9 @@
 }
 @media screen and (max-width: 660px) {
   .blogs {
-    grid-template-columns: repeat(1, 1fr);
+    body {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
@@ -210,6 +218,7 @@
   }
 
   .left-header {
+    height: 28vh;
     .h-shape {
       display: none;
     }
@@ -235,7 +244,7 @@
     padding: 7rem 3rem;
   }
   .about-stats .progress-bars {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);

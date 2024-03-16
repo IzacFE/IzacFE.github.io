@@ -88,3 +88,16 @@ function toastMessage(response) {
     x.className = x.className = "";
   }, 2900);
 }
+
+// text loop effect by continuously shifting the first character of a text to the end
+document.addEventListener("DOMContentLoaded", function () {
+  const textElement = document.getElementById("looping-text");
+  const originalText = textElement.textContent;
+  let currentText = originalText;
+
+  setInterval(() => {
+    substring = currentText.slice(0, 20);
+    currentText = currentText.slice(20) + substring;
+    textElement.textContent = currentText;
+  }, 200); // Change this value to adjust the speed of the loop
+});
